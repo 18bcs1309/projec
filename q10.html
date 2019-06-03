@@ -1,0 +1,26 @@
+<html>
+<head>
+<script>
+    function Find()
+    {var i;
+    var str=document.getElementById("txt").value;
+     var po;
+     var a=document.getElementById("t1").value;
+    for(i=0;i<str.length;i++)
+    {if(str[i]==a)
+    {po=i+1;
+     break;
+    }
+    }document.getElementById("p1").innerHTML="element at position="+po;
+    }
+</script>
+</head>
+    <body>
+    <h2>write string</h2>
+        <input type="text" id="txt">
+        <h2>write element to find</h2>
+    <input type="text" id="t1">
+        <button onclick="Find()">click</button>
+        <p id="p1"></p>
+    </body>
+</html>
